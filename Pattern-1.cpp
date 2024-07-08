@@ -16,6 +16,7 @@ void pattern_1()
 }
 int main()
 {
+    cout<<"Welcome to Patterns.";
     pattern_1();
     return 0;
 }
