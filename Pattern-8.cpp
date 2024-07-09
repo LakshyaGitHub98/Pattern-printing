@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void pattern_7()
+void pattern_8()
 {
     int n;
     cout<<"Enter the number of lines of pattern you wana to print:";
@@ -24,6 +24,6 @@ void pattern_7()
 }
 int main()
 {
-    pattern_7();
+    pattern_8();
     return 0;
 }
