@@ -5,38 +5,18 @@ void pattern_21()
     int n;
     cout<<"Enter the number of lines of pattern you wana to print:";
     cin>>n;
-    for(int i=0;i<n;i++)
+    for(int i=0;i<2*n-1;i++)
     {
-        if(i==0 or i==(n-1))
+        for(int j =0;j<2*n-1;j++)
         {
-            for(int j=0;j<n;j++)
-            {
-                cout<<"*";
-            }
-        }
-        else if(i%2==0)
-        {
-            for(int j=0;j<n;j++)
-            {
-                cout<<" ";
-            }
-        }
-        else
-        {
-            for(int j=0;j<n;j++)
-            {
-                if(j==0 or j==(n-1))
-                {
-                    cout<<"*";
-                }
-                else
-                {
-                    cout<<" ";
-                }
-            }
+            int top=i;
+            int left=j;
+            int right=2*(n-1)-j;
+            int down=2*(n-1)-i;
+            cout<<" "<<(n-min(min(top,down),min(left,right)));
         }
         cout<<endl;
-    }
+    }    
 }
 int main()
 {
